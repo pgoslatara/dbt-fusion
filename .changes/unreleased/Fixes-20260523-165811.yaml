@@ -1,0 +1,7 @@
+kind: Fixes
+body: Cast `table_owner` to `varchar` in the DuckDB catalog macro so the Arrow column type matches the Utf8 StringArray the adapter expects, preventing a `dbt9002` Internal Error during `dbt compile --write-catalog`
+time: 2026-05-23T16:58:11.276638+00:00
+custom:
+    author: pgoslatara
+    issue: "1758"
+    project: dbt-fusion
